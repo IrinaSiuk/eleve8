@@ -5,7 +5,7 @@
 // Send transaction data with a pageview if available
 // when the page loads. Otherwise, use an event when the transaction
 // data becomes available.
-dataLayer.push({ ecommerce:});  // Clear the previous ecommerce object.
+dataLayer.push({ ecommerce: null});  // Clear the previous ecommerce object.
 dataLayer.push({
   'ecommerce': {
     'purchase': {
