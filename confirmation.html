@@ -1,93 +1,7 @@
 <!doctype html>
 <html lang="fr">
 <head>
-	
-	<script>
 
-var dataLayer   = window.dataLayer || [] ;
-
-dataLayer.push ({
-
-  ' événement ' : 'transaction',
-
-  ' commerce électronique ' : {
-
-    ' achat ' : {
-
-      ' champaction ' : {
-
-        'id' : 'T12345', // ID de transaction. Obligatoire          
-
-        'affiliation' : 'Magasin en ligne',
-
-        'revenu' : '35.43', // Valeur totale de la transaction ( taxes et frais de port inclus)
-
-        'taxe':'4.90',
-
-        'livraison' : '5,99',
-
-        'coupon' : 'SUMMER_SALE'
-
-      },
-
-    ' products ' : [{ // Liste des productFieldObjects .
-
-        ' name ': 'T-Shirt 2', // Le nom ou l'identifiant est requis .
-
-        'identifiant' : '12345',
-
-        ' prix ' : '15.25',
-
-        'marque': ' Measureschool ',
-
-        ' Catégorie ' : ' Chemises ',
-
-        'variante' : 'Gris',
-
-        ' quantité ' : 1,
-
-        'coupon': '' // Les champs optionnels peuvent être omis ou définis sur une chaîne vide .
-
-       },
-
-       {
-
-        ' nom ' : 'T-Shirt 1',
-
-        'identifiant' : '67890',
-
-        ' prix ' : '33.75',
-
-        'marque': ' Measureschool ',
-
-        ' Catégorie ' : ' Chemises ',
-
-        'variante' : 'Noir',
-
-        ' quantité ' : 1
-
-       }] //développe ce tableau s'il existe plus de produits
-
-    }
-
-  }
-
-});
-
-</script>
-	
-	<script> 
-    dataLayer = [{ 
-      ' pageCategory ' : ' confirmation produit ' ,       
-         }]; 
- </script>
-	<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PH5L5SG');</script>
-<!-- End Google Tag Manager -->
 
   <meta charset="utf-8">
   <title>Confirmation de paiement</title>
@@ -96,10 +10,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <script src="script.js"></script>
 </head>
 <body>
-	<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PH5L5SG"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+	
 
   <div class="container">
     <div class="main">
