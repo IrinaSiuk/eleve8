@@ -1,6 +1,81 @@
 <!doctype html>
 <html lang="fr">
 <head>
+	
+	<script>
+
+var dataLayer   = window.dataLayer || [] ;
+
+dataLayer.push ({
+
+  ' événement ' : 'transaction',
+
+  ' commerce électronique ' : {
+
+    ' achat ' : {
+
+      ' champaction ' : {
+
+        'id' : 'T12345', // ID de transaction. Obligatoire          
+
+        'affiliation' : 'Magasin en ligne',
+
+        'revenu' : '35.43', // Valeur totale de la transaction ( taxes et frais de port inclus)
+
+        'taxe':'4.90',
+
+        'livraison' : '5,99',
+
+        'coupon' : 'SUMMER_SALE'
+
+      },
+
+    ' products ' : [{ // Liste des productFieldObjects .
+
+        ' name ': 'T-Shirt 2', // Le nom ou l'identifiant est requis .
+
+        'identifiant' : '12345',
+
+        ' prix ' : '15.25',
+
+        'marque': ' Measureschool ',
+
+        ' Catégorie ' : ' Chemises ',
+
+        'variante' : 'Gris',
+
+        ' quantité ' : 1,
+
+        'coupon': '' // Les champs optionnels peuvent être omis ou définis sur une chaîne vide .
+
+       },
+
+       {
+
+        ' nom ' : 'T-Shirt 1',
+
+        'identifiant' : '67890',
+
+        ' prix ' : '33.75',
+
+        'marque': ' Measureschool ',
+
+        ' Catégorie ' : ' Chemises ',
+
+        'variante' : 'Noir',
+
+        ' quantité ' : 1
+
+       }] //développe ce tableau s'il existe plus de produits
+
+    }
+
+  }
+
+});
+
+</script>
+	
 	<script> 
     dataLayer = [{ 
       ' pageCategory ' : ' confirmation produit ' ,       
